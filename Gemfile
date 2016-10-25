@@ -10,12 +10,16 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
-###### Mein Zeug #######
+###### Meine Ecke Streng Privat #######
+####  MD5 Verschlüsselt Yoah! #########
+##### Es bleibt alles so wie es ist ##
 
 gem 'paperclip'
-gem 'bootstrap', '~> 4.0.0.alpha5'
-########################
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'devise' #Kenn war doch
 
+##########
+### Beruhigt hab ich mich jetzt nicht...
 
 
 group :development, :test do
@@ -25,10 +29,8 @@ end
 group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
