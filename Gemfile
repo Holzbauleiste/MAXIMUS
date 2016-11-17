@@ -13,7 +13,6 @@ gem 'jbuilder', '~> 2.5'
 ###### Meine Ecke Streng Privat #######
 ####  MD5 Verschlüsselt Yoah! #########
 ##### Es bleibt alles so wie es ist ##
-
 gem 'devise'
 gem 'paperclip'
 gem 'bootstrap-sass', '~> 3.3.5'

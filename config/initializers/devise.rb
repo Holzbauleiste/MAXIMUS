@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '0b93babdb89d39920160dd597d2972ab4db89d58c2985659d094f78c93ff5886912aece7fd36ddcfa13a22b797d62f68a118862a7d412fc7ce73893dda603835'
+  # config.secret_key = '22b981f55fcca79dc9a8a52929004580a4b938ce63b0d83bcaa1592f995c4a17a77dfcb5e37d60e9b509cb61a3b6cfa4e5676f3468d3df017d30740c27a686d9'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -34,7 +34,10 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  # config.authentication_keys = [:email]
+  
+  ########## Added Username ##########
+  config.authentication_keys = [:login]
+  ####################################
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -108,7 +111,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'd3d8684272b9368339920f271ab2760c26daab96787f08508dd9107b9349823c6fc68ba41b3a20cf159dd6a622a6d8b73f2123d0c90ef7e3bacdd9e46f867d55'
+  # config.pepper = '980f92449810dfbeab7977ded644be653b28dd9a7e203324183c36f6263fa4558dff3154c283c180f1ba0a814381c933f2cb672fc553fe11d05660b314cedfe8'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -154,7 +157,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
-  config.password_length = 5..117
+  config.password_length = 6..128
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
