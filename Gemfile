@@ -14,9 +14,9 @@ gem 'jbuilder', '~> 2.5'
 ####  MD5 Verschlüsselt Yoah! #########
 ##### Es bleibt alles so wie es ist ##
 
+gem 'devise'
 gem 'paperclip'
 gem 'bootstrap-sass', '~> 3.3.5'
-gem 'devise' #Kenn war doch
 
 ##########
 ### Beruhigt hab ich mich jetzt nicht...

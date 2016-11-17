@@ -1,1 +1,22 @@
-<center><h2>Hier kommt nch was...</h2></center>
+<head>
+<title>All Styles</title>
+</head>
+<body>
+<div class=row>
+	<% @styles.each do |style| %>
+		<div class="col-md-5">
+			<%= link_to style do%>
+				<div class="thumbnail">
+					<div class="caption">
+    		    		<center><h3><%= style.title %></h3></center>
+      				</div>
+					<%= image_tag style.pic.url(:medium)%>
+				</div>
+			<% end %>
+		</div>
+	<% end %>
+</div>
+
+
+
+</body>
