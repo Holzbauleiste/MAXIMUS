@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/plataformatec/devise/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/plataformatec/devise/commits/master.atom"/>
+  <title>Recent Commits to devise:master</title>
+  <updated>2016-10-31T13:50:47-02:00</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d2ea28b3dbbf3e11dc9e800179fb89c53d61fc71</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/d2ea28b3dbbf3e11dc9e800179fb89c53d61fc71"/>
+    <title>
+        Merge pull request #4343 from ethirajsrinivasan/set_minimum_password_…
+    </title>
+    <updated>2016-10-31T13:50:47-02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/80978?v=3&amp;s=30"/>
+    <author>
+      <name>lucasmazza</name>
+      <uri>https://github.com/lucasmazza</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #4343 from ethirajsrinivasan/set_minimum_password_length_for_registration_update_path
+
+set minimum password length after user registration update&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7a44233fb9439e7cc4d1503b14f02a1d9f6da7b9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/7a44233fb9439e7cc4d1503b14f02a1d9f6da7b9"/>
+    <title>
+        set minimum password length after user registration update
+    </title>
+    <updated>2016-10-27T08:33:35+05:30</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7569031?v=3&amp;s=30"/>
+    <author>
+      <name>ethirajsrinivasan</name>
+      <uri>https://github.com/ethirajsrinivasan</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;set minimum password length after user registration update&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a9bb7d0318054ebb74d09d835927fbb377afd8bd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/a9bb7d0318054ebb74d09d835927fbb377afd8bd"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2016-10-19T22:54:41+03:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/11292872?v=3&amp;s=30"/>
+    <author>
+      <name>takitsuba</name>
+      <uri>https://github.com/takitsuba</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md
+
+change &amp;quot;bundle command&amp;quot; to the writing of &amp;quot;command line&amp;quot;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ebe65b516b3883005db2b02f49414c411a2f301d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/ebe65b516b3883005db2b02f49414c411a2f301d"/>
+    <title>
+        Merge pull request #4318 from kami-zh/improve-readme
+    </title>
+    <updated>2016-10-05T18:29:42+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/9582?v=3&amp;s=30"/>
+    <author>
+      <name>josevalim</name>
+      <uri>https://github.com/josevalim</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #4318 from kami-zh/improve-readme
+
+Update README - Decrease stretches to 12&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ebf79be163c9bcc31d169f249e8182e4292679ab</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/ebf79be163c9bcc31d169f249e8182e4292679ab"/>
+    <title>
+        Update README - Decrease stretches to 12
+    </title>
+    <updated>2016-10-06T01:05:39+09:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/4456532?v=3&amp;s=30"/>
+    <author>
+      <name>kami-zh</name>
+      <uri>https://github.com/kami-zh</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README - Decrease stretches to 12&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/88724e10adaf9ffd1d8dbfbaadda2b9d40de756a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/88724e10adaf9ffd1d8dbfbaadda2b9d40de756a"/>
+    <title>
+        Merge pull request #4292 from rousisk/rousisk-readme-var-to-symbol
+    </title>
+    <updated>2016-09-13T15:41:50-03:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/26328?v=3&amp;s=30"/>
+    <author>
+      <name>carlosantoniodasilva</name>
+      <uri>https://github.com/carlosantoniodasilva</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #4292 from rousisk/rousisk-readme-var-to-symbol
+
+convert variable to symbol in readme&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/30405943b56faf8844f3ff228f829180adc90b7e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/30405943b56faf8844f3ff228f829180adc90b7e"/>
+    <title>
+        convert variable to symbol in readme
+    </title>
+    <updated>2016-09-13T20:39:44+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1429943?v=3&amp;s=30"/>
+    <author>
+      <name>rousisk</name>
+      <uri>https://github.com/rousisk</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;convert variable to symbol in readme&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9c0dccfec1b44b29ba63f8b74ddf655371597eda</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/9c0dccfec1b44b29ba63f8b74ddf655371597eda"/>
+    <title>
+        Merge pull request #4284 from znz/strip_heredoc
+    </title>
+    <updated>2016-09-04T12:49:10-03:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/80978?v=3&amp;s=30"/>
+    <author>
+      <name>lucasmazza</name>
+      <uri>https://github.com/lucasmazza</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #4284 from znz/strip_heredoc
+
+Use `strip_heredoc` for deprecation warnings&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9fe7040db90be1acb499d2534b077266dbf3b209</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/9fe7040db90be1acb499d2534b077266dbf3b209"/>
+    <title>
+        Use `strip_heredoc` for deprecation warnings
+    </title>
+    <updated>2016-09-04T19:15:09+09:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/11857?v=3&amp;s=30"/>
+    <author>
+      <name>znz</name>
+      <uri>https://github.com/znz</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Use `strip_heredoc` for deprecation warnings&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4c3838bb759ec741558ecf86bd6cf01465043e4c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/4c3838bb759ec741558ecf86bd6cf01465043e4c"/>
+    <title>
+        Merge pull request #4255 from olivierlacan/patch-2
+    </title>
+    <updated>2016-08-15T19:05:39-03:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/80978?v=3&amp;s=30"/>
+    <author>
+      <name>lucasmazza</name>
+      <uri>https://github.com/lucasmazza</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #4255 from olivierlacan/patch-2
+
+Fix typos in failure_app comments&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/48aa20897f2a2022c970398c67495cfb04be5f2a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/48aa20897f2a2022c970398c67495cfb04be5f2a"/>
+    <title>
+        Fix typos in failure_app comments
+    </title>
+    <updated>2016-08-15T15:51:11-04:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/65950?v=3&amp;s=30"/>
+    <author>
+      <name>olivierlacan</name>
+      <uri>https://github.com/olivierlacan</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix typos in failure_app comments&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2a5f8b6688cdc088fcebd3da055b4d3ce38139e4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/2a5f8b6688cdc088fcebd3da055b4d3ce38139e4"/>
+    <title>
+        Merge pull request #4250 from marcgg/patch-1
+    </title>
+    <updated>2016-08-11T11:21:31+03:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/200500?v=3&amp;s=30"/>
+    <author>
+      <name>nashby</name>
+      <uri>https://github.com/nashby</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #4250 from marcgg/patch-1
+
+Fix a minor typo in specs&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8ee01fc10bfcd82428e5a32693348dc18b33a9f0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/8ee01fc10bfcd82428e5a32693348dc18b33a9f0"/>
+    <title>
+        Fix a minor typo in specs
+    </title>
+    <updated>2016-08-11T09:56:45+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/127343?v=3&amp;s=30"/>
+    <author>
+      <name>marcgg</name>
+      <uri>https://github.com/marcgg</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix a minor typo in specs
+
+There is nothing much to this one, it&amp;#39;s in the test description so it shouldn&amp;#39;t impact a thing and will make this line more greppable.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d7985e7ddbe50f0ce1132399a6f2ee7796fcbf6d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/d7985e7ddbe50f0ce1132399a6f2ee7796fcbf6d"/>
+    <title>
+        Merge pull request #4247 from rthbound/updates-omniauth-url
+    </title>
+    <updated>2016-08-10T14:56:53-03:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/26328?v=3&amp;s=30"/>
+    <author>
+      <name>carlosantoniodasilva</name>
+      <uri>https://github.com/carlosantoniodasilva</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #4247 from rthbound/updates-omniauth-url
+
+Updates url for omniauth to omniauth/omniauth repo&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ae8b0914a99661f429943d9840b7a0e8583c35b0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/ae8b0914a99661f429943d9840b7a0e8583c35b0"/>
+    <title>
+        Updates url for omniauth to omniauth/omniauth repo
+    </title>
+    <updated>2016-08-10T09:57:14-05:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/708692?v=3&amp;s=30"/>
+    <author>
+      <name>rthbound</name>
+      <uri>https://github.com/rthbound</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Updates url for omniauth to omniauth/omniauth repo&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6720f93d2c54904f10b6e6d6beb51d0b5b330976</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/6720f93d2c54904f10b6e6d6beb51d0b5b330976"/>
+    <title>
+        Remove deprecated omniauth path from `store_location` docs [ci skip]
+    </title>
+    <updated>2016-07-26T10:10:49-03:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/80978?v=3&amp;s=30"/>
+    <author>
+      <name>lucasmazza</name>
+      <uri>https://github.com/lucasmazza</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove deprecated omniauth path from `store_location` docs [ci skip]&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/13d4fd40884315b8059b6bfd7738050da0ac2357</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/13d4fd40884315b8059b6bfd7738050da0ac2357"/>
+    <title>
+        Merge pull request #4193 from 3wille/master
+    </title>
+    <updated>2016-07-22T15:14:51-03:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/80978?v=3&amp;s=30"/>
+    <author>
+      <name>lucasmazza</name>
+      <uri>https://github.com/lucasmazza</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #4193 from 3wille/master
+
+add block passthrough to devise_mail&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bbd614a7250ed364bf7b962b723fd3e4497716c3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/bbd614a7250ed364bf7b962b723fd3e4497716c3"/>
+    <title>
+        Merge pull request #4206 from nickharvey27/fix-typo
+    </title>
+    <updated>2016-07-19T09:50:06+03:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/200500?v=3&amp;s=30"/>
+    <author>
+      <name>nashby</name>
+      <uri>https://github.com/nashby</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #4206 from nickharvey27/fix-typo
+
+Fix small typo&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/eb0540e0288e58ed43de337be808fc09c9180f41</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/eb0540e0288e58ed43de337be808fc09c9180f41"/>
+    <title>
+        fix small typo
+    </title>
+    <updated>2016-07-18T23:46:51-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/1921211d515100a8082f8e825694f6cf?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>nickharvey27</email>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix small typo&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/08374f1d338c029dc090b89759eee3166ba4c7ab</id>
+    <link type="text/html" rel="alternate" href="https://github.com/plataformatec/devise/commit/08374f1d338c029dc090b89759eee3166ba4c7ab"/>
+    <title>
+        fix test
+    </title>
+    <updated>2016-07-18T09:24:46+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/6792668?v=3&amp;s=30"/>
+    <author>
+      <name>3wille</name>
+      <uri>https://github.com/3wille</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix test&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

@@ -14,4 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require skrollr
+//= require skrollr.ie
+//= require skrollr.menu
+//= require skrollr.stylesheets
 //= require_tree .

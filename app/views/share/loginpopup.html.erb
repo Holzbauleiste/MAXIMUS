@@ -7,13 +7,19 @@
       </div>
         <div class="modal-body">
           <%= form_for(:user, :url => session_path(:user)) do |f| %>
+            <%= f.label :Username %>
+            <br>
             <%= f.text_field :login %>
+            <br>
+            <br>
+            <%= f.label :password%>
+            <br>
             <%= f.password_field :password %>
-            <%= f.check_box :remember_me %>
-            <%= f.label :remember_me %>
+            <br>
             <%= f.submit 'Sign in' %>
-            <%= link_to "Forgot your password?", new_password_path(:user) %>
             <%= link_to "or Register", new_user_registration_path(), :class => 'btn btn-info' %>
+            <br>
+            <%= link_to "Forgot your password?", new_password_path(:user) %>
           <% end %>
         </div>
         <div class="modal-footer">

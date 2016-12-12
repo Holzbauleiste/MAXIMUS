@@ -4,7 +4,6 @@
     <title>MAXIMUS</title>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,7 +11,7 @@
     
     <style>
         body {
-            background-color: #ccffff;
+            background-color: #c9c9c9;
         }
     </style>
   </head>
@@ -31,7 +30,7 @@
                     <li><a href="/styles">Fashion</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact">Contact</a></li>
-                </ul>
+             ,   </ul>
                 
                 <form class="navbar-form navbar-right">
                 <% if user_signed_in? %>
@@ -49,7 +48,11 @@
         </div>
 </nav>
      <%= render file: "share/loginpopup.html.erb" %>
-    
+    <% form_for(:user, url: user_session_path) do |i|%>
+        <% i.label :username, :class => 'nav navbar-nav' %>
+    <% end %>
+    <!-- Pop Ups -->
+    <%= render 'layouts/messages' %>
 
     <%= yield %>
   </body>

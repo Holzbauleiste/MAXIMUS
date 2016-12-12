@@ -1,22 +1,34 @@
 <head>
 <title>All Styles</title>
+<style>
+.thumbnail {
+	height: 400px;
+
+}
+
+</style>
 </head>
 <body>
-<div class=row>
-	<% @styles.each do |style| %>
-		<div class="col-md-5">
-			<%= link_to style do%>
-				<div class="thumbnail">
-					<div class="caption">
-    		    		<center><h3><%= style.title %></h3></center>
-      				</div>
-					<%= image_tag style.pic.url(:medium)%>
-				</div>
-			<% end %>
-		</div>
-	<% end %>
-</div>
+
+<% @styles.each do |style| %>
+	<div class="col-md-4">
+		<%= link_to style do%>
+			<div 
+			class="thumbnail" 
+			data-top="background-color:rgb(255,255,255);"
+			data--500-top="background-color:rgb(200,200,200);">
+				<div class="caption">
+   		    		<center><h3><%= style.title %></h3></center>
+     				</div>
+				<%= image_tag style.pic.url(:medium)%>
+			</div>
+		<% end %>
+	</div>
+<% end %>
 
 
-
+<script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+</script>
 </body>
