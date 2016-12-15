@@ -3,10 +3,13 @@ class StylesController < ApplicationController
 		@styles = Style.all
 	end
 	def new
+	@style = Style.new(style_params)
 	end
 	def create
-  	@style = Style.new(style_params)
- 	 @style.save
+	3.times do
+		@styles.uploads.build
+	end
+ 	@style.save
 	redirect_to @style
 	end
 	
@@ -17,6 +20,13 @@ class StylesController < ApplicationController
 
 private  	
   	def style_params
-    params.require(:styles).permit(:title, :text, :pic)
+    params.permit(:title, :text, :pic)
+    #params.require(:styles).
+  	#permit(
+    #:title,
+    #:text,
+    #:pic,
+    #:uploads
+    #)
   	end
 end
