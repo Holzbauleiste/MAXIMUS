@@ -10,22 +10,12 @@
 </head>
 <body>
 
-<% @styles.each do |style| %>
-	<div class="col-md-4">
-		<%= link_to style do%>
-			<div 
-			class="thumbnail" 
-			data-top="background-color:rgb(255,255,255);"
-			data--500-top="background-color:rgb(200,200,200);">
-				<div class="caption">
-   		    		<center><h3><%= style.title %></h3></center>
-     				</div>
-				<%= image_tag style.pic.url(:medium)%>
-			</div>
-		<% end %>
-	</div>
+<%= @styles.each do |style| %>
+   	<%= style.title %>
+   	<%= @pictures.each do |pic| %>
+    	<%= image_tag pic.url(:medium)%>
+    <% end %>
 <% end %>
-
 
 <script type="text/javascript" src="skrollr.min.js"></script>
     <script type="text/javascript">

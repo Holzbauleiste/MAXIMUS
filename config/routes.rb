@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :styles
+  resources :pictures
   get 'about' => 'about#index'
   get 'contact' => 'contact#index'
 

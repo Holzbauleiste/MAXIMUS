@@ -1,12 +1,14 @@
 <center>
-<p>
-  <strong>Title:</strong>
+<h1>
   <%= @style.title %>
-</p>
+</h1>
  
-<p>
-  <strong>Text:</strong>
+<h4>
   <%= @style.text %>
-</p>
-<%= image_tag @style.pic.url(:normalermodus) %>
+</h4>
+<%= if !@pictures.nil? %>
+	<%= @pictures.each do |pic| { %>
+		<%= image_tag pic.url(:normalermodus) %>
+	<% } %>
+<% end %>
 </center>

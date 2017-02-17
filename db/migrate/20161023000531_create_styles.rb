@@ -3,7 +3,6 @@ class CreateStyles < ActiveRecord::Migration[5.0]
     create_table :styles do |t|
       t.string :title
       t.text :text
-
       t.timestamps
     end
   end
