@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AddStlyesIdToPictureTest < ActiveSupport::TestCase
+class AddStylesIdToPictureTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

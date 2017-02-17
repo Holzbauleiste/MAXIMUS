@@ -6,9 +6,7 @@
 <h4>
   <%= @style.text %>
 </h4>
-<%= if !@pictures.nil? %>
-	<%= @pictures.each do |pic| { %>
-		<%= image_tag pic.url(:normalermodus) %>
-	<% } %>
+<% @pictures.each do |pic| %>
+	<%= image_tag pic.image.url(:medium) %>
 <% end %>
 </center>

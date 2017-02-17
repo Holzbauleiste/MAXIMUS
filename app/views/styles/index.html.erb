@@ -12,9 +12,7 @@
 
 <%= @styles.each do |style| %>
    	<%= style.title %>
-   	<%= @pictures.each do |pic| %>
-    	<%= image_tag pic.url(:medium)%>
-    <% end %>
+    	<%= image_tag pic.image.url(:medium)%>
 <% end %>
 
 <script type="text/javascript" src="skrollr.min.js"></script>
