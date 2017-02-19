@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '22b981f55fcca79dc9a8a52929004580a4b938ce63b0d83bcaa1592f995c4a17a77dfcb5e37d60e9b509cb61a3b6cfa4e5676f3468d3df017d30740c27a686d9'
+  # config.secret_key = 'ba522f06f51d2e6411f836705edfb59cb1e60ef72e9d7b6ad7b74f72e3ea01c63ba92566aede605c7f6994a83ecb13401c61171c1275270b7e6effa9817ea299'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -34,10 +34,7 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  
-  ########## Added Username ##########
   config.authentication_keys = [:login]
-  ####################################
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -111,7 +108,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '980f92449810dfbeab7977ded644be653b28dd9a7e203324183c36f6263fa4558dff3154c283c180f1ba0a814381c933f2cb672fc553fe11d05660b314cedfe8'
+  # config.pepper = 'e92d797662a8d91b97ae738f01f003b5e613c2f295f847a6fec6ab376707b7d58c99c96265d0f914615fbddc7c62fcaba391a1af9934b21b4066398680343e7d'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -157,7 +154,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
-  config.password_length = 5..128
+  config.password_length = 6..128
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly

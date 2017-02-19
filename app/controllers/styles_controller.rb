@@ -20,6 +20,7 @@ class StylesController < ApplicationController
 	def show
   		@style = Style.find(params[:id])
   		@pictures = @style.pictures
+  		@comment = @style.comments
   	end
   	def edit
   		@style = Style.find(params[:id])

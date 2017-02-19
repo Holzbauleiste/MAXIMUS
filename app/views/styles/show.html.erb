@@ -9,4 +9,8 @@
 <% @pictures.each do |pic| %>
 	<%= image_tag pic.image.url(:medium) %>
 <% end %>
+<%= form_for [@style, @style.comments.new] do |i| %>
+	<%= i.text_field :content, placeholder: 'Write a Comment...' %>
+	<%= i.submit %>
+<% end %>
 </center>
