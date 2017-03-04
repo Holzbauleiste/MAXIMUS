@@ -3,7 +3,7 @@
 </head>
 <body>
 <center>
-<% if !user_signed_in? %>
+<% if user_signed_in? %>
   <%= form_for @style, :html => { multipart: true } do |f| %>
     <p>
       <%= f.label :title %><br>
@@ -20,6 +20,7 @@
     </p>
   <% end %>
   <% else %>
+    <h1>Please Login First</h1>
 <% end %>
 </center>
 </body>

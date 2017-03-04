@@ -1,16 +1,31 @@
 <center>
 <h1>
-  <%= @style.title %>
+  <%= @message %>
 </h1>
  
+
 <h4>
   <%= @style.text %>
 </h4>
 <% @pictures.each do |pic| %>
 	<%= image_tag pic.image.url(:medium) %>
 <% end %>
-<%= form_for [@style, @style.comments.new] do |i| %>
-	<%= i.text_field :content, placeholder: 'Write a Comment...' %>
-	<%= i.submit %>
-<% end %>
+	<%= form_for [@style, @style.comments.new] do |i| %>
+		<%= i.text_field :content, placeholder: 'Write a Comment...' %>
+		<%= i.submit %>
+	<% end %>
+	<center>
+	<% @style.comments.each do |commy| %>
+		<br>
+		<b><%= commy.user_name %></b>
+		<%= commy.content %>
+		<% if user_signed_in? %>
+			<% if current_user.id == commy.user_id %>
+				<%= link_to style_comment_path(@style, commy), :method => :delete do %>
+					<bra>Delete</bra>
+				<% end %>
+			<% end %>
+		<% end %>
+	<% end %>
 </center>
+<%= render file: "share/loginpopup.html.erb" %>

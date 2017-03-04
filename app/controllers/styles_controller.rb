@@ -3,10 +3,11 @@ class StylesController < ApplicationController
 		@styles = Style.all
 	end
 	def new
-		@style = Style.new
+		@style = current_user.styles.build
 	end
 	def create
-		@style = Style.new(style_params)
+		@style = current_user.styles.build(style_params)
+		
  		if @style.save
  			if params[:images]
  				params[:images].each do |image|
@@ -20,13 +21,19 @@ class StylesController < ApplicationController
 	def show
   		@style = Style.find(params[:id])
   		@pictures = @style.pictures
-  		@comment = @style.comments
   	end
   	def edit
   		@style = Style.find(params[:id])
   		@style.save
   	end
-private  	
+  	def destroy
+  		@style = Style.find(params[:id])
+		@style.destroy
+		redirect_to style_path
+  	end
+
+private
+
   	def style_params
     params.require(:style).permit(:title, :text, :pictures)
   	end

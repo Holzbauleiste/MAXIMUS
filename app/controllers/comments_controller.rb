@@ -1,35 +1,33 @@
 class CommentsController < ApplicationController
-	before_action :set_post
-	
-	def show
-		@comment = Comment.new
-	end
-	def new
-		@comment = Comment.new
-	end
+	before_action :set_styles
 
+	def index
+		@comments = @style.comments.order('created_at asc')
+	end
 	def create
 		@comment = @style.comments.build(comment_params)
 		@comment.user_id = current_user.id
+		@comment.user_name = current_user.username
 		if @comment.save
-		else
-			flash[:alert] = "Check the comment form, something went horribly wrong."
-    		render root_path
+			redirect_to @style
+			else
+			redirect_to root_path 
 		end
-	end
-	def edit
 	end
 	def destroy
 		@comment = @style.comments.find(params[:id])
-		@comment.destroy
+		if @comment.user_id == current_user.id
+			@comment.destroy
+			redirect_to @style
+		end
+	end
+	def show
 	end
 
-private
 	def comment_params
-		params.require.premit(:content)
+		params.require(:comment).permit(:content, :username)
 	end
-
-	def set_post
+	def set_styles
 		@style = Style.find(params[:style_id])
 	end
 end

@@ -21,7 +21,12 @@
 				<div class="caption">
    		    		<center><h3><%= style.title %></h3></center>
      				</div>
-				<%= link_to image_tag(style.pictures.first.image.url(:medium)), styles_path(style)%>
+				<% if style.pictures.first %>
+				<%= link_to image_tag(style.pictures.first.image.url(:medium)), style_path(style)%>
+				<% else %>
+					<center><h1>No Photos found</h1></center>
+				<% end %>
+				<%= link_to "Delete", style, :method => :delete %>
 			</div>
 		<% end %>
 	</div>
