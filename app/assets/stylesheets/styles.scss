@@ -1,3 +1,38 @@
 // Place all the styles related to the styles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.original {
+  border-style: solid;
+  border-width: 5px;
+  border-color: green;
+}
+
+.user_post {
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+}
+
+.thumbnail {
+  height: 400px;
+}
+
+.heading {
+  font-size: 30px;
+  font-color: red;
+}
+
+.gallery {
+  position: reltive;
+  padding-top: 30px;
+}
+
+.qualle {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 6%;
+  top: 6%;
+}
+

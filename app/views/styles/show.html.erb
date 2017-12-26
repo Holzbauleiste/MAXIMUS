@@ -1,31 +1,87 @@
+<script type="text/javascript" src="slideshow.js"></script>
+<%= stylesheet_link_tag "slideshow" %>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <center>
 <h1>
   <%= @message %>
 </h1>
  
-
+<h1><b>
+<%= @style.title %>
+</b></h1>
 <h4>
   <%= @style.text %>
 </h4>
-<% @pictures.each do |pic| %>
-	<%= image_tag pic.image.url(:medium) %>
-<% end %>
-	<%= form_for [@style, @style.comments.new] do |i| %>
-		<%= i.text_field :content, placeholder: 'Write a Comment...' %>
-		<%= i.submit %>
-	<% end %>
-	<center>
-	<% @style.comments.each do |commy| %>
-		<br>
-		<b><%= commy.user_name %></b>
-		<%= commy.content %>
-		<% if user_signed_in? %>
-			<% if current_user.id == commy.user_id %>
-				<%= link_to style_comment_path(@style, commy), :method => :delete do %>
-					<bra>Delete</bra>
-				<% end %>
-			<% end %>
-		<% end %>
-	<% end %>
+
 </center>
-<%= render file: "share/loginpopup.html.erb" %>
+
+
+
+<div class="slideshow">
+	<center>
+		<% @pictures.each_with_index do |pic, index| %>
+    	    <% if index == 0 %>
+    	    	<center>
+    	    	<%= image_tag pic.image.url(:testen), :class => "slide js-fade fade-in", :style => "display: block;", :align =>"middle" %>
+    	    	</center>
+    	    <% else %>
+    	    	<center>
+    	    	<%= image_tag pic.image.url(:testen), :class => "slide js-fade fade-in", :align => "middle" %>
+    	    	</center>
+    	    <% end %>
+    	<% end %>
+
+		<%= image_tag "pfeil- links.png", :class => "arrow arrow_left", :onclick => "plusSlides(-1)"%>
+    	<%= image_tag "pfeil- rects.png", :class => "arrow arrow_right", :onclick => "plusSlides(1)" %>
+    </center>
+</div>
+
+
+
+
+<div class="action-area">
+	<center>
+		<% if user_signed_in? %>
+			<%= form_for [@style, @style.comments.new] do |i| %>
+				<%= i.text_field :content, placeholder: 'Write a Comment...' %>
+				<%= i.submit %>
+			<% end %>
+		<% else %>
+			<br>
+			<a data-toggle="modal" style="cursor:pointer" data-target="#login">Login to write a Comment</a>
+		<% end %>
+
+	</center>
+</div>
+
+
+
+<div class="comment-area">
+	
+	<div class="comment-header-font">
+		<p class="comment-font">Comments</p>
+	</div>
+
+
+	<% @style.comments.each do |commy| 
+		if !commy.content.nil? %>
+			<div class="comment">
+				<div class="comment-head">
+					<a class="comment-head-name"><%= commy.user_name %></a>
+					</div>
+					<%= commy.content %>
+					<% if user_signed_in? %>
+						<% if current_user.id == commy.user_id %>
+						<%= link_to style_comment_path(@style, commy), :method => :delete do %>
+									<remove class="remove-comment">X</remove>
+							<% end
+						end
+					end %>
+				</div>
+			</div>
+		<% end
+	end %>
+
+
+</div>

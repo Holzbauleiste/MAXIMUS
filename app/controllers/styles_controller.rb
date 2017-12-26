@@ -7,7 +7,7 @@ class StylesController < ApplicationController
 	end
 	def create
 		@style = current_user.styles.build(style_params)
-		
+		@style.user_name = current_user.username
  		if @style.save
  			if params[:images]
  				params[:images].each do |image|
@@ -29,7 +29,7 @@ class StylesController < ApplicationController
   	def destroy
   		@style = Style.find(params[:id])
 		@style.destroy
-		redirect_to style_path
+		redirect_to styles_path
   	end
 
 private

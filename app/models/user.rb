@@ -1,6 +1,12 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+  has_attached_file :avatar, styles: { 
+    img: "200x200#",
+    info: "300x300#"
+    }, default_url: "missing.png"
+  do_not_validate_attachment_file_type :avatar, content_type: /\Aimage\/.*\z/
+
   has_many :comments, dependent: :destroy
   has_many :styles, dependent: :destroy
   devise :database_authenticatable, :registerable,

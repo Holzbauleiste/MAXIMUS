@@ -1,0 +1,23 @@
+<%= stylesheet_link_tag "profile" %>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+
+<p class="username-header"><%= @user.username %></p>
+
+<div class="user-info">
+	<%= form_for(@user, url: {action: 'update'} ) do |f| %>
+		<div class="form-group form-action">
+			<label for="status">Status:</label>
+			<%= f.text_field :status, :id => "status" %>
+		</div>
+		<%= image_tag @user.avatar.url(:info), :class => "user-avatar"%>
+		<%= image_tag "wassolls.png", :class => "user-avatar user-avatar-edit"%>
+		<%= f.file_field :avatar, :class => "file_field" %>
+		<%= f.submit "Submit", :class => "btn-submit btn" %>
+	<% end %>
+	<%= link_to profile_path(@user.username) do%>
+		<button type="button" class="btn btn-back"><-- Back</button>
+	<% end %>
+</div>

@@ -1,7 +1,28 @@
-<div class="slider">
-	<ul>
-		<li><%= image_tag "a.jpg"%></li>
-		<li><%= image_tag "b.jpg"%></li>
-		<li><%= image_tag "c.jpg"%></li>
-	</ul>
-</div>
+
+<center>
+
+
+<%= image_tag "1.png", :class => "slide", :style =>"display: block;" %>
+<%= image_tag "2.png", :class => "slide" %>
+<%= image_tag "3.png", :class => "slide" %>
+<%= image_tag "4.png", :class => "slide" %>
+<%= image_tag "5.png", :class => "slide" %>
+<%= image_tag "6.png", :class => "slide" %>
+<%= image_tag "7.png", :class => "slide" %>
+<%= image_tag "8.png", :class => "slide" %>
+<%= image_tag "9.png", :class => "slide" %>
+
+<button class="btn btn-default" onclick="plusSlides(-1)">Prev</button>
+<button class="btn btn-default" onclick="plusSlides(1)">Next</button>
+<br>
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	<span class="dot" onclick="currentSlide(6)"></span>
+	<span class="dot" onclick="currentSlide(7)"></span>
+	<span class="dot" onclick="currentSlide(8)"></span>
+	<span class="dot" onclick="currentSlide(9)"></span>
+
+</center>

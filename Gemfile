@@ -17,6 +17,8 @@ gem 'skrollr-rails'
 gem 'devise'
 gem 'paperclip'
 gem 'bootstrap-sass', '~> 3.3.5'
+gem 'simple_form'
+
 
 ##########
 ### Beruhigt hab ich mich jetzt nicht...

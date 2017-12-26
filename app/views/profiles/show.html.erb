@@ -1,0 +1,29 @@
+<% if @user.nil? %>
+
+<% else %>
+	<%= stylesheet_link_tag "profile" %>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+
+	<div class="user-info">
+		<p class="username-header"><%= @user.username %></p>
+		
+		<%= image_tag @user.avatar.url(:info), :class => "user-avatar"%>
+		<detail class="status"><%= @user.status %></detail>
+		<% if @own_profile %>
+			<%= link_to edit_profile_path(@user.username) do %>
+				<button type="button" class="btn btn-submit">Edit</button>
+			<% end %>
+		<% end %>
+
+		<% if !@posts.nil? %>
+			<% @posts.each do |post| %>
+				<%= link_to post do %>
+					<%= post.title %>
+					<%= image_tag post.pictures[0].image.url(:thumb) %>
+				<% end %>
+				<br>
+			<% end %>
+		<% end %>
+	</div>
+<% end %>

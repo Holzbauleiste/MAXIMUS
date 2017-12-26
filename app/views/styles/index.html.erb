@@ -1,38 +1,57 @@
 <head>
-<title>All Styles</title>
-<style>
-.thumbnail {
-	height: 400px;
-
-}
-
-</style>
-</head>
+	<%= stylesheet_link_tag "slideshow" %>
+	<%= stylesheet_link_tag "styles" %>
+	<title>All Styles</title>
+	</head>
 <body>
 
-
-<% @styles.each do |style| %>
-	<div class="col-md-4">
-		<%= link_to style do%>
-			<div 
-			class="thumbnail" 
-			data-top="background-color:rgb(255,255,255);"
-			data--500-top="background-color:rgb(200,200,200);">
-				<div class="caption">
-   		    		<center><h3><%= style.title %></h3></center>
-     				</div>
-				<% if style.pictures.first %>
-				<%= link_to image_tag(style.pictures.first.image.url(:medium)), style_path(style)%>
-				<% else %>
-					<center><h1>No Photos found</h1></center>
+<div class="gallery">
+	<% @styles.each do |style| %>
+		<% if style.user_name == "Florin" %>
+			<div class="col-md-4">
+				<%= link_to style do%>
+						<div 
+							class="thumbnail original" 
+							data-top="background-color:rgb(255,255,255);"
+							data--500-top="background-color:rgb(200,200,200);">
+							<div class="caption">
+	   		    				<center>
+	   		    					<h3 class="heading"><%= style.title %></h3>
+	   		    				</center>
+	   		    				<%= image_tag "qualle.png", class: "qualle" %>
+	    					</div>
+							<% if style.pictures.first %>
+								<%= link_to image_tag(style.pictures.first.image.url(:medium)), style_path(style)%>
+								<% else %>
+								<center><h1>No Photos found</h1></center>
+							<% end %>
+							<%= link_to "Delete", style, :method => :delete %>
+						</div>
+					</div>
 				<% end %>
-				<%= link_to "Delete", style, :method => :delete %>
+			</div>
+			
+			<% else %>
+			<div class="col-md-4">
+				<%= link_to style do%>
+					<div class="thumbnail user_post" 
+						data-top="background-color:rgb(255,255,255);"
+						data--500-top="background-color:rgb(200,200,200);">
+						<div class="caption">
+	   		    			<center><h3 class="heading"><%= style.title %></h3></center>
+	    				</div>
+						<% if style.pictures.first %>
+							<%= link_to image_tag(style.pictures.first.image.url(:medium)), style_path(style)%>
+							<% else %>
+							<center><h1>No Photos found</h1></center>
+						<% end %>
+						<%= link_to "Delete", style, :method => :delete %>
+					</div>
+				<% end %>
 			</div>
 		<% end %>
-	</div>
-<% end %>
-
-
+	<% end %>
+</div>
 
 
 
